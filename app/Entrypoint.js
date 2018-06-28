@@ -1,5 +1,5 @@
 /**
- * Vlenza React Native App
+ * React Native App
  * Everthing starts from the entrypoint
  */
 import React, { Component } from 'react';
