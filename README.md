@@ -20,7 +20,7 @@ and redux persist. Latest version of react-navigation (v2.0.1) included with red
 
 ## Prerequisites
 
-* [Node](https://nodejs.org) v6.10 (it is recommended to install it via [NVM](https://github.com/creationix/nvm))
+* [Node](https://nodejs.org) v8.10 (it is recommended to install it via [NVM](https://github.com/creationix/nvm))
 * [Yarn](https://yarnpkg.com/)
 * A development machine set up for React Native by following [these instructions](https://facebook.github.io/react-native/docs/getting-started.html)
 
