@@ -7,7 +7,7 @@
 
 
 React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga 
-and redux persist. Latest version of react-navigation (v2.0.1) included with redux-navigation support .
+and redux persist. Latest version of react-navigation (v2.13) with NavigationService. Redux Integration removed from the latest code.
 
 ## Features
 
