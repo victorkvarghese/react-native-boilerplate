@@ -4,12 +4,8 @@ import storage from 'redux-persist/es/storage'; // default: localStorage if web,
 import { createLogger } from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 
-import rootReducers from '@reducers'; // where reducers is a object of reducers
-import sagas from '@sagas';
-import {
-    createReduxBoundAddListener,
-    createReactNavigationReduxMiddleware
-} from 'react-navigation-redux-helpers';
+import rootReducers from 'app/reducers'; // where reducers is a object of reducers
+import sagas from 'app/sagas';
 
 const config = {
     key: 'root',
@@ -27,13 +23,6 @@ if (__DEV__) {
     middleware.push(createLogger());
 }
 
-const reduxMiddleware = createReactNavigationReduxMiddleware(
-    'root',
-    state => state.nav
-);
-const addListener = createReduxBoundAddListener('root');
-middleware.push(reduxMiddleware);
-
 const reducers = persistCombineReducers(config, rootReducers);
 const enhancers = [applyMiddleware(...middleware)];
 // const initialState = {};
@@ -43,7 +32,7 @@ const persistor = persistStore(store, persistConfig, () => {
     //   console.log('Test', store.getState());
 });
 const configureStore = () => {
-    return { persistor, store, addListener };
+    return { persistor, store };
 };
 
 sagaMiddleware.run(sagas);

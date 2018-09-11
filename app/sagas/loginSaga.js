@@ -6,8 +6,8 @@
  */
 import { put, call, select } from 'redux-saga/effects';
 import { Alert } from 'react-native';
-import loginUser from '@api/methods/loginUser';
-import * as loginActions from '@actions/loginActions';
+import loginUser from 'app/api/methods/loginUser';
+import * as loginActions from 'app/actions/loginActions';
 // import * as navigationActions from '@actions/navigationActions';
 
 //selector Function used to access reducer states

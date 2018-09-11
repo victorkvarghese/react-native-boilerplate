@@ -1,12 +1,17 @@
-import { createStackNavigator } from 'react-navigation';
+import React, { Component } from 'react';
+import NavigationStack from './NavigationStack';
+import NavigationService from './NavigationService';
 
-import Login from '@screens/Login';
-
-const RNApp = createStackNavigator({
-    Login: {
-        screen: Login,
-        navigationOptions: { header: null, gesturesEnabled: false }
+class AppNavigator extends Component {
+    render() {
+        return (
+            <NavigationStack
+                ref={navigatorRef => {
+                    NavigationService.setTopLevelNavigator(navigatorRef);
+                }}
+            />
+        );
     }
-});
+}
 
-export default RNApp;
+export default AppNavigator;

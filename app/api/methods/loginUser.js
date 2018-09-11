@@ -1,4 +1,4 @@
-import Api from '@api';
+import Api from 'app/api';
 import ApiConstants from '../ApiConstants';
 
 export default function loginUser(username, password) {
