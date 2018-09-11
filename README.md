@@ -31,8 +31,7 @@ and redux persist. Latest version of react-navigation (v2.0.1) included with red
 3. Remove `.git` folder,  `rm -rf .git`
 4. Open `package.json` and change the `name` property with your project name
 5. Run `yarn` or `npm install` to install dependencies
-6. Run `react-native upgrade` to update the project name to `android` and `ios` build
-    * Type `y` to each prompt
+6. Run `react-native upgrade` to upgrade and add iOS & Android Folders.
   
 
 7. Run `react-native link`
