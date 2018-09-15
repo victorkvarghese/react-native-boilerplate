@@ -2,28 +2,15 @@
 import ApiConstants from './ApiConstants';
 export default function api(path, params, method, token) {
     let options;
-    token
-        ? (options = Object.assign(
-            {
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                    token: token
-                }
-            },
-            { method: method },
-            params ? { body: JSON.stringify(params) } : null
-        ))
-        : (options = Object.assign(
-            {
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            },
-            { method: method },
-            params ? { body: JSON.stringify(params) } : null
-        ));
+    options = {
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+            ...(token && { token: token })
+        },
+        method: method,
+        ...(params && { body: JSON.stringify(params) })
+    };
 
     return fetch(ApiConstants.BASE_URL + path, options)
         .then(resp => resp.json())
