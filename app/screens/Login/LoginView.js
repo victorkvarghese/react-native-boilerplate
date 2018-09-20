@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
-import * as navigationActions from 'app/actions/navigationActions';
+import PropTypes from 'prop-types';
 
 class LoginView extends Component {
     navigate = () => {
-        navigationActions.navigateToHome();
+        this.props.onLogin('username', 'password');
     };
 
     render() {
@@ -19,5 +19,9 @@ class LoginView extends Component {
         );
     }
 }
+
+LoginView.propTypes = {
+    onLogin: PropTypes.func
+};
 
 export default LoginView;
