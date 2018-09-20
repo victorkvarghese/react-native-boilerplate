@@ -20,6 +20,11 @@ and redux persist. Latest version of react-navigation (v2.13) with NavigationSer
 * [Jest](https://facebook.github.io/jest/)
 * [Eslint](http://eslint.org/) ([Airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb))
 
+## Projects using this BoilerPlate
+* [react-native-messenger](https://github.com/victorkvarghese/react-native-messenger)
+* [rn-coffee](https://github.com/victorkvarghese/rn-coffee)
+
+
 ## Prerequisites
 
 * [Node](https://nodejs.org) v8.10 (it is recommended to install it via [NVM](https://github.com/creationix/nvm))
