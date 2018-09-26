@@ -1,13 +1,13 @@
 
-🚀 React Native Boilerplate - June 2018
+🚀 React Native Boilerplate - September 2018
 =======================================
 
-[![React Native](https://img.shields.io/badge/React%20Native-v0.56-blue.svg)](https://facebook.github.io/react-native/)
-[![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v2.13-blue.svg)](https://reactnavigation.org/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.57-blue.svg)](https://facebook.github.io/react-native/)
+[![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v2.16-blue.svg)](https://reactnavigation.org/)
 
 
 React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga 
-and redux persist. Latest version of react-navigation (v2.13) with NavigationService. Redux Integration removed from react-navigation in the latest code. Refer 0.55.4 Branch for old implementation.
+and redux persist. Latest version of react-navigation (v2.16) with NavigationService instead of Redux Integration.
 
 
 
