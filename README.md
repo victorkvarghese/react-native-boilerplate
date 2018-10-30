@@ -43,16 +43,17 @@ and redux persist. Latest version of react-navigation (v2.16) with NavigationSer
 
 7. Run `react-native link`
 8. Open `index.js` and replace `'ReactNativeBoilerPlate'` by your project name
+9. Open `app.json` and replace `'ReactNativeBoilerPlate'` by your project name 
 
-9. Start the packager with `npm start`
-10. Connect a mobile device to your development machine
-11. Run the test application:
+10. Start the packager with `npm start`
+11. Connect a mobile device to your development machine
+12. Run the test application:
   * On Android:
     * Run `react-native run-android`
   * On iOS:
     * Open `ios/YourReactProject.xcodeproj` in Xcode
     * Hit `Run` after selecting the desired device
-15. Enjoy!!!
+13. Enjoy!!!
 
 
 ## Contributing
