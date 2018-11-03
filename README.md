@@ -37,13 +37,15 @@ and redux persist. Latest version of react-navigation (v2.16) with NavigationSer
 2. Go to project's root directory, `cd <your project name>`
 3. Remove `.git` folder,  `rm -rf .git`
 4. Open `package.json` and change the `name` property with your project name
-5. Run `yarn` or `npm install` to install dependencies
-6. Run `react-native upgrade` to upgrade and add iOS & Android Folders.
-  
+5. Open `index.js` and replace `'ReactNativeBoilerPlate'` by your project name
+6. Open `app.json` and replace `'ReactNativeBoilerPlate'` by your project name 
 
-7. Run `react-native link`
-8. Open `index.js` and replace `'ReactNativeBoilerPlate'` by your project name
-9. Open `app.json` and replace `'ReactNativeBoilerPlate'` by your project name 
+7. Run `yarn` or `npm install` to install dependencies
+
+8. Run `react-native upgrade` to upgrade and add iOS & Android Folders.
+  
+9. Run `react-native link`
+
 
 10. Start the packager with `npm start`
 11. Connect a mobile device to your development machine
