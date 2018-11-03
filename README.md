@@ -10,6 +10,14 @@ React Native Boilerplate is a starting point for React Native application. This 
 and redux persist. Latest version of react-navigation (v2.16) with NavigationService instead of Redux Integration.
 
 
+## Scalability Factor
+
+This Type based Architecture scales smoothly for small - medium apps. If you guys are building a very large application I would suggest using the following feature based architecture which will more developer friendly and scales efficiently.
+
+[React-Native-Feature-BoilerPlate](https://github.com/victorkvarghese/react-native-feature-boilerplate)
+
+
+
 
 ## Features
 
