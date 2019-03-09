@@ -55,16 +55,18 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
   
 9. Run `react-native link`
 
+10. Latest versions of react-naviagtion uses gesture handler which is native module. For android you have to do some additional steps to configure them. Follow [these instructions](https://reactnavigation.org/docs/en/getting-started.html)
+FYI: Navigation should work fine even without these but when u need gestures or drawer naviagtion you need this setup
 
-10. Start the packager with `npm start`
-11. Connect a mobile device to your development machine
-12. Run the test application:
+11. Start the packager with `npm start`
+12. Connect a mobile device to your development machine
+13. Run the test application:
   * On Android:
     * Run `react-native run-android`
   * On iOS:
     * Open `ios/YourReactProject.xcodeproj` in Xcode
     * Hit `Run` after selecting the desired device
-13. Enjoy!!!
+14. Enjoy!!!
 
 
 ## Contributing
