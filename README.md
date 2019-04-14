@@ -1,9 +1,9 @@
 
-🚀 React Native Boilerplate - January 2019
+🚀 React Native Boilerplate - April 2019
 ===========================================
 
-[![React Native](https://img.shields.io/badge/React%20Native-v0.58.3-blue.svg)](https://facebook.github.io/react-native/)
-[![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v3.1-blue.svg)](https://reactnavigation.org/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.59.4-blue.svg)](https://facebook.github.io/react-native/)
+[![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v3.8-blue.svg)](https://reactnavigation.org/)
 
 
 React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga 
@@ -51,7 +51,7 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 
 7. Run `yarn` or `npm install` to install dependencies
 
-8. Run `react-native upgrade` to upgrade and add iOS & Android Folders.
+8. Run `react-native eject` to upgrade and add iOS & Android Folders.
   
 9. Run `react-native link`
 
