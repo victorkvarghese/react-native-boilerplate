@@ -1,9 +1,9 @@
 
-🚀 React Native Boilerplate - April 2019
+🚀 React Native Boilerplate - Jan 2020
 ===========================================
 
-[![React Native](https://img.shields.io/badge/React%20Native-v0.59.4-blue.svg)](https://facebook.github.io/react-native/)
-[![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v3.8-blue.svg)](https://reactnavigation.org/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.61.5-green.svg)](https://facebook.github.io/react-native/)
+[![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v4.0-blue.svg)](https://reactnavigation.org/)
 
 
 React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga 
@@ -21,7 +21,8 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 
 ## Features
 
-* [Redux](http://redux.js.org/)
+* Uses [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+* [Redux](http://redux.js.org/) with [hooks](https://react-redux.js.org/api/hooks) support
 * [Redux Saga](https://redux-saga.js.org/)
 * [Redux Persist](https://github.com/rt2zz/redux-persist/)
 * [React Navigation](https://reactnavigation.org/) 
@@ -45,18 +46,9 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 1. Clone this repo, `git clone https://github.com/victorkvarghese/react-native-boilerplate.git <your project name>`
 2. Go to project's root directory, `cd <your project name>`
 3. Remove `.git` folder,  `rm -rf .git`
-4. Open `package.json` and change the `name` property with your project name
-5. Open `index.js` and replace `'ReactNativeBoilerPlate'` by your project name
-6. Open `app.json` and replace `'ReactNativeBoilerPlate'` by your project name 
+4. Use [React Native Rename](https://github.com/junedomingo/react-native-rename) to update project name
+5. Run `yarn` or `npm install` to install dependencies
 
-7. Run `yarn` or `npm install` to install dependencies
-
-8. Run `react-native eject` to upgrade and add iOS & Android Folders.
-  
-9. Run `react-native link`
-
-10. Latest versions of react-naviagtion uses gesture handler which is native module. For android you have to do some additional steps to configure them. Follow [these instructions](https://reactnavigation.org/docs/en/getting-started.html)
-## FYI: Navigation should work fine even without these but when u need gestures or drawer navigation you need this setup
 
 
 11. Start the packager with `npm start`
