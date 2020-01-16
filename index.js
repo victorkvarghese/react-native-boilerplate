@@ -1,4 +1,6 @@
-/** @format */
+/**
+ * @format
+ */
 
 import { AppRegistry } from 'react-native';
 import Entrypoint from './app/Entrypoint';
