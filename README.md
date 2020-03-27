@@ -1,9 +1,9 @@
 
-🚀 React Native Boilerplate - Jan 2020
+🚀 React Native Boilerplate - March 2020
 ===========================================
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.61.5-green.svg)](https://facebook.github.io/react-native/)
-[![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v4.0-blue.svg)](https://reactnavigation.org/)
+[![React Navigation V5](https://img.shields.io/badge/React%20Navigation-v5.1-blue.svg)](https://reactnavigation.org/)
 
 
 React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga 
@@ -27,11 +27,12 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 ## Features
 
 * Uses [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+* [React Navigation](https://reactnavigation.org/) 
+* [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler) 
+* [React Native Paper](https://callstack.github.io/react-native-paper/) 
 * [Redux](http://redux.js.org/) with [hooks](https://react-redux.js.org/api/hooks) support
 * [Redux Saga](https://redux-saga.js.org/)
 * [Redux Persist](https://github.com/rt2zz/redux-persist/)
-* [React Navigation](https://reactnavigation.org/) 
-* [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler) 
 * [Jest](https://facebook.github.io/jest/)
 * [Eslint](http://eslint.org/) ([Airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb))
 
