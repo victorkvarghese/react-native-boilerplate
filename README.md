@@ -32,6 +32,7 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 * [React Navigation](https://reactnavigation.org/) 
 * [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler) 
 * [React Native Paper](https://callstack.github.io/react-native-paper/) 
+* [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) 
 * [Redux](http://redux.js.org/) with [hooks](https://react-redux.js.org/api/hooks) support
 * [Redux Saga](https://redux-saga.js.org/)
 * [Redux Persist](https://github.com/rt2zz/redux-persist/)
