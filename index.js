@@ -2,8 +2,11 @@
  * @format
  */
 
+import 'react-native-gesture-handler';
 import { AppRegistry } from 'react-native';
-import Entrypoint from './app/Entrypoint';
+import App from './app/Entrypoint';
 import { name as appName } from './app.json';
+import { enableScreens } from 'react-native-screens';
+enableScreens();
 
-AppRegistry.registerComponent(appName, () => Entrypoint);
+AppRegistry.registerComponent(appName, () => App);

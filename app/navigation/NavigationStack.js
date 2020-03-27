@@ -1,21 +1,36 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import { navigationRef } from './NavigationService';
 
 import Login from 'app/screens/Login';
 import Home from 'app/screens/Home';
 
-const RNApp = createStackNavigator(
-  {
-    Login: {
-      screen: Login,
-    },
-    Home: {
-      screen: Home,
-    },
-  },
-  {
-    initialRouteName: 'Login',
-  },
-);
+const Stack = createStackNavigator();
 
-export default createAppContainer(RNApp);
+function App() {
+  return (
+    <NavigationContainer ref={navigationRef}>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: 'My home',
+            headerStyle: {
+              backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;

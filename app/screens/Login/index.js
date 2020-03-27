@@ -1,5 +1,7 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
+import { Text, Button } from 'react-native-paper';
+
 import { useDispatch, useSelector } from 'react-redux';
 import * as loginActions from 'app/actions/loginActions';
 import styles from './styles';
@@ -11,10 +13,10 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
-      <Text>Login Status : {id}</Text>
-      <TouchableOpacity onPress={onLogin}>
-        <Text>Go to Home</Text>
-      </TouchableOpacity>
+      <Text style={styles.login}>Login Status : {id}</Text>
+      <Button icon="camera" mode="outlined" onPress={onLogin}>
+        Login
+      </Button>
     </View>
   );
 }

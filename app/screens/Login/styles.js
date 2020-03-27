@@ -6,6 +6,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  login: {
+    padding: 8,
+  },
 });
 
 export default styles;
