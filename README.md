@@ -60,15 +60,15 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 
 
 
-11. Start the packager with `npm start`
-12. Connect a mobile device to your development machine
-13. Run the test application:
+6. Start the packager with `npm start`
+7. Connect a mobile device to your development machine
+8. Run the test application:
   * On Android:
     * Run `react-native run-android`
   * On iOS:
-    * Open `ios/YourReactProject.xcodeproj` in Xcode
+    * Open `ios/YourReactProject.xcworkspace` in Xcode
     * Hit `Run` after selecting the desired device
-14. Enjoy!!!
+9. Enjoy!!!
 
 
 ## Contributing
