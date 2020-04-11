@@ -1,5 +1,5 @@
 
-🚀 React Native Boilerplate - March 2020
+🚀 React Native Boilerplate - April 2020
 ===========================================
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.62.0-green.svg)](https://facebook.github.io/react-native/)
