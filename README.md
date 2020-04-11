@@ -23,6 +23,11 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 
 [React-Native-Feature-BoilerPlate](https://github.com/victorkvarghese/react-native-feature-boilerplate)
 
+## Projects using this BoilerPlate
+* [MediBuddy](https://github.com/victorkvarghese/MediBuddy)
+* [react-native-messenger](https://github.com/victorkvarghese/react-native-messenger)
+* [rn-coffee](https://github.com/victorkvarghese/rn-coffee)
+
 
 
 
@@ -38,10 +43,6 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 * [Redux Persist](https://github.com/rt2zz/redux-persist/)
 * [Jest](https://facebook.github.io/jest/)
 * [Eslint](http://eslint.org/) ([Airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb))
-
-## Projects using this BoilerPlate
-* [react-native-messenger](https://github.com/victorkvarghese/react-native-messenger)
-* [rn-coffee](https://github.com/victorkvarghese/rn-coffee)
 
 
 ## Prerequisites
@@ -60,15 +61,15 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 
 
 
-11. Start the packager with `npm start`
-12. Connect a mobile device to your development machine
-13. Run the test application:
+6. Start the packager with `npm start`
+7. Connect a mobile device to your development machine
+8. Run the test application:
   * On Android:
     * Run `react-native run-android`
   * On iOS:
-    * Open `ios/YourReactProject.xcodeproj` in Xcode
+    * Open `ios/YourReactProject.xcworkspace` in Xcode
     * Hit `Run` after selecting the desired device
-14. Enjoy!!!
+9. Enjoy!!!
 
 
 ## Contributing
