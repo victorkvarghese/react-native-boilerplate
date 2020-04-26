@@ -58,7 +58,7 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 3. Remove `.git` folder,  `rm -rf .git`
 4. Use [React Native Rename](https://github.com/junedomingo/react-native-rename) to update project name `$ npx react-native-rename <newName>`
 5. Run `yarn` or `npm install` to install dependencies
-
+6. Run `cd ios/ && pod install && cd ..` to install pod dependencies
 
 
 6. Start the packager with `npm start`
