@@ -33,7 +33,7 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 
 ## Features
 
-* Uses [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+* [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 * [React Navigation](https://reactnavigation.org/) 
 * [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler) 
 * [React Native Paper](https://callstack.github.io/react-native-paper/) 
