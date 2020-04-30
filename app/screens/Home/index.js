@@ -1,11 +1,20 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { Button } from 'react-native-paper';
+
+import { useDispatch } from 'react-redux';
+import * as loginActions from 'app/actions/loginActions';
 import styles from './styles';
 
 export default function Home() {
+  const dispatch = useDispatch();
+  const onLogout = () => dispatch(loginActions.logOut());
+
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Button icon="logout" mode="outlined" onPress={onLogout}>
+        Logout
+      </Button>
     </View>
   );
 }

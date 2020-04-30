@@ -14,7 +14,7 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <Text style={styles.login}>Login Status : {id}</Text>
-      <Button icon="camera" mode="outlined" onPress={onLogin}>
+      <Button icon="login" mode="outlined" onPress={onLogin}>
         Login
       </Button>
     </View>
