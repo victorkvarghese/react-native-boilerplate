@@ -1,20 +1,25 @@
 import React from 'react';
 import { View } from 'react-native';
 import { Button } from 'react-native-paper';
-
 import { useDispatch } from 'react-redux';
-import * as loginActions from 'app/actions/loginActions';
+import * as loginActions from './../../actions/loginActions';
 import styles from './styles';
+import {
+  StandardText,
+  StandardButton,
+} from '../../components/commonComponents';
 
-export default function Home() {
+const Home = () => {
   const dispatch = useDispatch();
   const onLogout = () => dispatch(loginActions.logOut());
 
   return (
     <View style={styles.container}>
-      <Button icon="logout" mode="outlined" onPress={onLogout}>
+      <StandardText>Home</StandardText>
+      <StandardButton icon="logout" mode="outlined" onPress={onLogout}>
         Logout
-      </Button>
+      </StandardButton>
     </View>
   );
-}
+};
+export default Home;

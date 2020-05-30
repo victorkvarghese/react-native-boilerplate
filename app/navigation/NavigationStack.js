@@ -5,37 +5,30 @@ import { useSelector } from 'react-redux';
 
 import { navigationRef } from './NavigationService';
 
-import Login from 'app/screens/Login';
-import Home from 'app/screens/Home';
+import Login from './../screens/Login';
+import Home from './../screens/Home';
 
 const Stack = createStackNavigator();
-
-const homeOptions = {
-  title: 'My home',
-  headerStyle: {
-    backgroundColor: '#f4511e',
-  },
-  headerTintColor: '#fff',
-  headerTitleStyle: {
-    fontWeight: 'bold',
-  },
-};
 
 function App() {
   const isLoggedIn = useSelector(state => state.loginReducer.isLoggedIn);
 
   return (
     <NavigationContainer ref={navigationRef}>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={({ route }) => {
+          // console.log(route);
+          return {
+            header: () => null,
+          };
+        }}>
         {isLoggedIn ? (
-          <Stack.Screen name="Home" component={Home} options={homeOptions} />
+          <Stack.Screen name="Home" component={Home} />
         ) : (
           <Stack.Screen
             name="Login"
             component={Login}
             options={{
-              // When logging out, a pop animation feels intuitive
-              // You can remove this if you want the default 'push' animation
               animationTypeForReplace: isLoggedIn ? 'push' : 'pop',
             }}
           />

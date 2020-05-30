@@ -1,22 +1,27 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Text, Button } from 'react-native-paper';
+import {
+  StandardText,
+  StandardButton,
+} from './../../components/commonComponents';
 
 import { useDispatch, useSelector } from 'react-redux';
-import * as loginActions from 'app/actions/loginActions';
+import * as loginActions from './../../actions/loginActions';
 import styles from './styles';
 
-export default function Login() {
-  const id = useSelector(state => state.loginReducer.id);
+const Login = () => {
+  const data = useSelector(state => state.loginReducer);
   const dispatch = useDispatch();
   const onLogin = () => dispatch(loginActions.requestLogin('test', '1234'));
 
   return (
     <View style={styles.container}>
-      <Text style={styles.login}>Login Status : {id}</Text>
-      <Button icon="login" mode="outlined" onPress={onLogin}>
+      <StandardText>{JSON.stringify(data)}</StandardText>
+      <StandardButton icon="login" mode="outlined" onPress={onLogin}>
         Login
-      </Button>
+      </StandardButton>
     </View>
   );
-}
+};
+
+export default Login;
