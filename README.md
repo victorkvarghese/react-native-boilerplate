@@ -59,7 +59,7 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 8. Run the test application:
 
 - On Android:
-  - Run `react-native run-android`
+  - Run `react-native run-android` or Use Android Studio (Recommended)
 - On iOS:
   - Open `ios/YourReactProject.xcworkspace` in Xcode
   - Hit `Run` after selecting the desired device
