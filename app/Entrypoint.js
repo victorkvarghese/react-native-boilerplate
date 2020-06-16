@@ -21,7 +21,7 @@ import configureStore from 'app/store/configureStore';
 
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
-  ...NavigationDefaultTheme
+  ...NavigationDefaultTheme,
 };
 
 const CombinedDarkTheme = {
