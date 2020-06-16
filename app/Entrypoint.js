@@ -1,6 +1,6 @@
 /**
  * React Native App
- * Everthing starts from the entrypoint
+ * Everthing starts from entrypoint
  */
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
