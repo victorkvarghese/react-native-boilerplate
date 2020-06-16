@@ -7,25 +7,27 @@ import { navigationRef } from './NavigationService';
 
 import Login from 'app/screens/Login';
 import Home from 'app/screens/Home';
+import ThemeController from '../components/ThemeController';
+import { StatusBar } from 'react-native';
 
 const Stack = createStackNavigator();
 
 const homeOptions = {
-  title: 'My home',
-  headerStyle: {
-    backgroundColor: '#f4511e',
-  },
-  headerTintColor: '#fff',
+  title: 'Home',
   headerTitleStyle: {
     fontWeight: 'bold',
   },
+  headerRight: () => <ThemeController />,
 };
 
-function App() {
+function App(props) {
+  const { theme } = props;
   const isLoggedIn = useSelector(state => state.loginReducer.isLoggedIn);
 
   return (
-    <NavigationContainer ref={navigationRef}>
+    <NavigationContainer ref={navigationRef} theme={theme}>
+      <StatusBar barStyle={theme.dark ? 'light-content' : 'dark-content'} />
+
       <Stack.Navigator>
         {isLoggedIn ? (
           <Stack.Screen name="Home" component={Home} options={homeOptions} />
@@ -37,6 +39,7 @@ function App() {
               // When logging out, a pop animation feels intuitive
               // You can remove this if you want the default 'push' animation
               animationTypeForReplace: isLoggedIn ? 'push' : 'pop',
+              headerRight: () => <ThemeController />,
             }}
           />
         )}
