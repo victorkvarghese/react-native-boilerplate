@@ -4,19 +4,15 @@
 import { Dimensions, Platform } from 'react-native';
 
 export function isIphoneX() {
-  let dimen = Dimensions.get('window');
+  const { height, width } = Dimensions.get('window');
   return (
     Platform.OS === 'ios' &&
     !Platform.isPad &&
     !Platform.isTVOS &&
-    (dimen.height === 812 || dimen.width === 812)
+    (height === 812 || width === 812)
   );
 }
 
 export function ifIphoneX(iphoneXStyle, regularStyle) {
-  if (isIphoneX()) {
-    return iphoneXStyle;
-  } else {
-    return regularStyle;
-  }
+  return isIphoneX() ? iphoneXStyle : regularStyle;
 }
