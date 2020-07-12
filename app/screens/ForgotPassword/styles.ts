@@ -6,15 +6,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  login: {
-    padding: 8,
-  },
-  forgot: {
-    marginTop: 12,
-  },
-  labelStyle: {
-    fontSize: 12,
-  },
 });
 
 export default styles;
