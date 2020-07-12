@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, Theme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { useSelector } from 'react-redux';
 
@@ -9,6 +9,7 @@ import Login from 'app/screens/Login';
 import Home from 'app/screens/Home';
 import ThemeController from '../components/ThemeController';
 import { StatusBar } from 'react-native';
+import { ILoginState } from 'app/models/reducers/login';
 
 const Stack = createStackNavigator();
 
@@ -20,9 +21,19 @@ const homeOptions = {
   headerRight: () => <ThemeController />,
 };
 
-function App(props) {
+interface IState {
+  loginReducer: ILoginState;
+}
+
+interface IProps {
+  theme: Theme;
+}
+
+function App(props: IProps) {
   const { theme } = props;
-  const isLoggedIn = useSelector(state => state.loginReducer.isLoggedIn);
+  const isLoggedIn = useSelector(
+    (state: IState) => state.loginReducer.isLoggedIn,
+  );
 
   return (
     <NavigationContainer ref={navigationRef} theme={theme}>

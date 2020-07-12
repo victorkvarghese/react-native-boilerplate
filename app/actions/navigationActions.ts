@@ -3,6 +3,6 @@
  */
 import NavigationService from 'app/navigation/NavigationService';
 
-export function navigateToHome(params) {
+export function navigateToHome(params: any) {
   NavigationService.navigate('Home', params);
 }

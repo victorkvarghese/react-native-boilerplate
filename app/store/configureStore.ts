@@ -26,7 +26,7 @@ if (__DEV__) {
 const reducers = persistCombineReducers(config, rootReducers);
 const enhancers = [applyMiddleware(...middleware)];
 // const initialState = {};
-const persistConfig = { enhancers };
+const persistConfig: any = { enhancers };
 const store = createStore(reducers, undefined, compose(...enhancers));
 const persistor = persistStore(store, persistConfig, () => {
   //   console.log('Test', store.getState());

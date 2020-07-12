@@ -30,8 +30,8 @@ const CombinedDarkTheme = {
 
 const { persistor, store } = configureStore();
 
-export function RootNavigation() {
-  const isDark = useSelector(state => state.themeReducer.isDark);
+const RootNavigation: React.FC = () => {
+  const isDark = useSelector((state) => state.themeReducer.isDark);
   const theme = isDark ? CombinedDarkTheme : CombinedDefaultTheme;
 
   return (
@@ -39,7 +39,7 @@ export function RootNavigation() {
       <Navigator theme={theme} />
     </PaperProvider>
   );
-}
+};
 
 export default function Entrypoint() {
   return (

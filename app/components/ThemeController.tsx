@@ -5,9 +5,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Switch } from 'react-native-paper';
 
 import * as themeActions from 'app/actions/themeActions';
+import { IThemeState } from 'app/models/reducers/theme';
 
-export default function ThemeController() {
-  const isDark = useSelector(state => state.themeReducer.isDark);
+interface IState {
+  themeReducer: IThemeState;
+}
+
+const ThemeController = () => {
+  const isDark = useSelector((state: IState) => state.themeReducer.isDark);
 
   const dispatch = useDispatch();
   const onToggleTheme = () => dispatch(themeActions.setIsDarkTheme(!isDark));
@@ -16,11 +21,15 @@ export default function ThemeController() {
 
   return (
     <View style={styles.container}>
-      <Switch value={isDark} onValueChange={onToggleTheme} />
+      <Switch
+        value={isDark}
+        onValueChange={onToggleTheme}
+        accessibilityStates=""
+      />
       <Icon name={iconName} size={20} style={styles.icon} color={iconColor} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -31,3 +40,5 @@ const styles = StyleSheet.create({
   },
   icon: { marginLeft: 4 },
 });
+
+export default ThemeController;

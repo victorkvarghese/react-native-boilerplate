@@ -7,23 +7,24 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
-    "update:pods": "cd ios && pod install --repo-update && cd ..",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "update:pods": "npx pod-install ios",
     "postinstall": "yarn run update:pods"
   },
   "dependencies": {
-    "@react-native-community/async-storage": "^1.10.0",
+    "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/masked-view": "^0.1.10",
-    "@react-navigation/native": "^5.2.6",
-    "@react-navigation/stack": "^5.3.1",
-    "react": "16.11.0",
-    "react-native": "0.62.2",
+    "@react-navigation/native": "^5.7.0",
+    "@react-navigation/stack": "^5.7.0",
+    "axios": "^0.19.2",
+    "react": "16.13.1",
+    "react-native": "0.63.0",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-paper": "^3.10.1",
-    "react-native-reanimated": "^1.8.0",
-    "react-native-safe-area-context": "^0.7.3",
-    "react-native-screens": "^2.7.0",
-    "react-native-vector-icons": "^6.6.0",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-safe-area-context": "^3.1.1",
+    "react-native-screens": "^2.9.0",
+    "react-native-vector-icons": "^7.0.0",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
@@ -31,16 +32,34 @@
     "redux-saga": "^1.1.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/runtime": "^7.6.2",
-    "@react-native-community/eslint-config": "^0.0.5",
-    "babel-jest": "^24.9.0",
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/jest": "^25.2.3",
+    "@types/react-native": "^0.62.18",
+    "@types/react-native-vector-icons": "^6.4.5",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-test-renderer": "^16.9.2",
+    "@types/redux-logger": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
-    "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.58.0",
-    "react-test-renderer": "16.11.0"
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "prettier": "^2.0.4",
+    "react-test-renderer": "16.13.1",
+    "typescript": "^3.8.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }

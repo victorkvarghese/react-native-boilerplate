@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>UIAppFonts</key>
-  <array>
+	<array>
     <string>MaterialIcons.ttf</string>
     <string>MaterialCommunityIcons.ttf</string>
   </array>

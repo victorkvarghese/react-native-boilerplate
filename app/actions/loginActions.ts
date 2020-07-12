@@ -2,8 +2,9 @@
  * Reducer actions related with login
  */
 import * as types from './types';
+import { ILoginResponse } from 'app/models/api/login';
 
-export function requestLogin(username, password) {
+export function requestLogin(username: string, password: string) {
   return {
     type: types.LOGIN_REQUEST,
     username,
@@ -17,7 +18,7 @@ export function loginFailed() {
   };
 }
 
-export function onLoginResponse(response) {
+export function onLoginResponse(response: ILoginResponse) {
   return {
     type: types.LOGIN_RESPONSE,
     response,
