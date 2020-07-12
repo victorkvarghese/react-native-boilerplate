@@ -28,7 +28,7 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 - [rn-coffee](https://github.com/victorkvarghese/rn-coffee)
 
 ## Features
-- [Typescript support](https://www.typescriptlang.org/)
+- [Typescript](https://www.typescriptlang.org/) support.
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [React Navigation](https://reactnavigation.org/) with [Authentication flow](https://reactnavigation.org/docs/auth-flow) baked in & theming support.
 - [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler)
