@@ -11,7 +11,7 @@ interface IState {
   loginReducer: ILoginState;
 }
 
-export default function Login() {
+const Login: React.FC = () => {
   const id = useSelector((state: IState) => state.loginReducer.id);
   const dispatch = useDispatch();
   const onLogin = () => dispatch(loginActions.requestLogin('test', '1234'));
@@ -32,4 +32,6 @@ export default function Login() {
       </View>
     </View>
   );
-}
+};
+
+export default Login;

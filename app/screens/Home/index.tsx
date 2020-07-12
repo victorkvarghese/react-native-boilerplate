@@ -5,8 +5,7 @@ import { Button } from 'react-native-paper';
 import { useDispatch } from 'react-redux';
 import * as loginActions from 'app/actions/loginActions';
 import styles from './styles';
-
-export default function Home() {
+const Home: React.FC = () => {
   const dispatch = useDispatch();
   const onLogout = () => dispatch(loginActions.logOut());
 
@@ -21,4 +20,6 @@ export default function Home() {
       </Button>
     </View>
   );
-}
+};
+
+export default Home;
