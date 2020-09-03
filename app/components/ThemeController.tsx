@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useDispatch, useSelector } from 'react-redux';
 import { Switch } from 'react-native-paper';
 
-import * as themeActions from 'app/actions/themeActions';
+import * as themeActions from 'app/store/actions/themeActions';
 import { IThemeState } from 'app/models/reducers/theme';
 
 interface IState {
@@ -21,11 +21,7 @@ const ThemeController: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Switch
-        value={isDark}
-        onValueChange={onToggleTheme}
-        accessibilityStates=""
-      />
+      <Switch value={isDark} onValueChange={onToggleTheme} />
       <Icon name={iconName} size={20} style={styles.icon} color={iconColor} />
     </View>
   );

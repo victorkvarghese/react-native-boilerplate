@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { Text, Button } from 'react-native-paper';
 import { useDispatch, useSelector } from 'react-redux';
 
-import * as loginActions from 'app/actions/loginActions';
+import * as loginActions from 'app/store/actions/loginActions';
 import styles from './styles';
 import { ILoginState } from 'app/models/reducers/login';
 import NavigationService from 'app/navigation/NavigationService';
@@ -20,18 +20,11 @@ const Login: React.FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.container}>
-        <Text accessibilityStates="" style={styles.login}>
-          Login Status : {id}
-        </Text>
-        <Button
-          accessibilityStates=""
-          icon="login"
-          mode="outlined"
-          onPress={onLogin}>
+        <Text style={styles.login}>Login Status : {id}</Text>
+        <Button icon="login" mode="outlined" onPress={onLogin}>
           Login
         </Button>
         <Button
-          accessibilityStates=""
           mode="text"
           style={styles.forgot}
           labelStyle={styles.labelStyle}

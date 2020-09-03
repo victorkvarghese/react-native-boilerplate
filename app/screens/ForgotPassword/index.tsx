@@ -9,11 +9,7 @@ const Home: React.FC = () => {
   const goBack = () => NavigationService.goBack();
   return (
     <View style={styles.container}>
-      <Button
-        icon="keyboard-backspace"
-        mode="outlined"
-        onPress={goBack}
-        accessibilityStates="">
+      <Button icon="keyboard-backspace" mode="outlined" onPress={goBack}>
         Go Back
       </Button>
     </View>

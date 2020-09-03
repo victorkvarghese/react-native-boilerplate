@@ -2,7 +2,7 @@
  * handles login states in the app
  */
 import createReducer from 'app/lib/createReducer';
-import * as types from 'app/actions/types';
+import * as types from 'app/store/actions/types';
 
 import { ILoginState } from 'app/models/reducers/login';
 import {

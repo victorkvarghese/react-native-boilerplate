@@ -17,7 +17,7 @@ import {
 } from '@react-navigation/native';
 
 import Navigator from 'app/navigation';
-import configureStore from 'app/store/configureStore';
+import configureStore from 'app/store';
 import { IThemeState } from './models/reducers/theme';
 
 const CombinedDefaultTheme = {

@@ -3,7 +3,7 @@
  * Avoid data persist
  */
 import createReducer from 'app/lib/createReducer';
-import * as types from 'app/actions/types';
+import * as types from 'app/store/actions/types';
 
 import { IThemeState } from 'app/models/reducers/theme';
 import { IThemeToggleAction } from 'app/models/actions/theme';

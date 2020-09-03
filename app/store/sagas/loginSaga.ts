@@ -9,7 +9,7 @@ import { put } from 'redux-saga/effects';
 
 import { Alert } from 'react-native';
 // import loginUser from 'app/services/loginUser';
-import * as loginActions from 'app/actions/loginActions';
+import * as loginActions from 'app/store/actions/loginActions';
 
 // Our worker Saga that logins the user
 export default function* loginAsync() {

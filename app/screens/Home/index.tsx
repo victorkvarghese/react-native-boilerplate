@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { Button } from 'react-native-paper';
 
 import { useDispatch } from 'react-redux';
-import * as loginActions from 'app/actions/loginActions';
+import * as loginActions from 'app/store/actions/loginActions';
 import styles from './styles';
 const Home: React.FC = () => {
   const dispatch = useDispatch();
@@ -11,11 +11,7 @@ const Home: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Button
-        icon="logout"
-        mode="outlined"
-        onPress={onLogout}
-        accessibilityStates="">
+      <Button icon="logout" mode="outlined" onPress={onLogout}>
         Logout
       </Button>
     </View>
