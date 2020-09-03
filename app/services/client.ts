@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: '/api-pop',
+  baseURL: '/react-dev',
   responseType: 'json',
   withCredentials: true,
 });

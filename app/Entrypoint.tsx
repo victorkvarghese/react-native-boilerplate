@@ -18,7 +18,7 @@ import {
 
 import Navigator from 'app/navigation';
 import configureStore from 'app/store';
-import { IThemeState } from './models/reducers/theme';
+import { IThemeState } from 'app/models/reducers/theme';
 
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
