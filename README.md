@@ -56,9 +56,9 @@ This Type based Architecture scales smoothly for small - medium apps. If you guy
 2. Go to project's root directory, `cd <your project name>`
 3. Remove `.git` folder, `rm -rf .git`
 4. Use [React Native Rename](https://github.com/junedomingo/react-native-rename) to update project name `$ npx react-native-rename <newName>`
-5. Run `yarn` or `npm install` to install dependencies
+5. Run `yarn` to install dependencies
 
-6. Start the packager with `npm start`
+6. Start the packager with `yarn start`
 7. Connect a mobile device to your development machine
 8. Run the test application:
 
