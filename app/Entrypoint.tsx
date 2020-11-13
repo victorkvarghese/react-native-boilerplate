@@ -20,13 +20,36 @@ import Navigator from 'app/navigation';
 import configureStore from 'app/store';
 import { IThemeState } from 'app/models/reducers/theme';
 
+const PaperThemeDefault = {
+  ...PaperDefaultTheme,
+  colors: {
+    ...PaperDefaultTheme.colors,
+    primary: '#3498db'
+  }
+};
+
+const PaperThemeDark = {
+  ...PaperDarkTheme,
+  colors: {
+    ...PaperDarkTheme.colors,
+    primary: '#3498db'
+  }
+};
+
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
   ...NavigationDefaultTheme,
 };
+
 const CombinedDarkTheme = {
   ...PaperDarkTheme,
   ...NavigationDarkTheme,
+  colors: {
+    ...NavigationDarkTheme.colors,
+    background: '#303030',
+    card: '#222222',
+    text: '#ffffff'
+  }
 };
 
 const { persistor, store } = configureStore();
@@ -37,8 +60,8 @@ interface IState {
 
 const RootNavigation: React.FC = () => {
   const isDark = useSelector((state: IState) => state.themeReducer.isDark);
+  const paperTheme = isDark ? PaperThemeDark : PaperThemeDefault;
   const combinedTheme = isDark ? CombinedDarkTheme : CombinedDefaultTheme;
-  const paperTheme = isDark ? PaperDarkTheme : PaperDefaultTheme;
 
   return (
     <PaperProvider theme={paperTheme}>
