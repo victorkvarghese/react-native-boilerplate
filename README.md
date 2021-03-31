@@ -1,6 +1,6 @@
-# 🚀 React Native Boilerplate - September 2020
+# 🚀 React Native Boilerplate - March 2021
 
-[![React Native](https://img.shields.io/badge/React%20Native-v0.63.2-green.svg)](https://facebook.github.io/react-native/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.64.0-green.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V5](https://img.shields.io/badge/React%20Navigation-v5.9-blue.svg)](https://reactnavigation.org/)
 
 React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga
