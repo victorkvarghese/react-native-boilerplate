@@ -6,7 +6,7 @@
 	<array>
     <string>MaterialIcons.ttf</string>
     <string>MaterialCommunityIcons.ttf</string>
-  </array>
+    </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
