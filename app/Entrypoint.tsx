@@ -24,16 +24,16 @@ const PaperThemeDefault = {
   ...PaperDefaultTheme,
   colors: {
     ...PaperDefaultTheme.colors,
-    primary: '#3498db'
-  }
+    primary: '#3498db',
+  },
 };
 
 const PaperThemeDark = {
   ...PaperDarkTheme,
   colors: {
     ...PaperDarkTheme.colors,
-    primary: '#3498db'
-  }
+    primary: '#3498db',
+  },
 };
 
 const CombinedDefaultTheme = {
@@ -48,8 +48,8 @@ const CombinedDarkTheme = {
     ...NavigationDarkTheme.colors,
     background: '#303030',
     card: '#222222',
-    text: '#ffffff'
-  }
+    text: '#ffffff',
+  },
 };
 
 const { persistor, store } = configureStore();
