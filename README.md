@@ -15,6 +15,11 @@ and redux persist. Uses latest version of react-navigation (v5.9)
 
 </p>
 
+# UPDATE
+If you want something simple, un openionated and scalable with no boilerplate: 
+[React-Native-Query-Zusatnd-BoilerPlate](https://github.com/victorkvarghese/react-native-boilerplate-query-zustand)
+
+
 ## Scalability Factor
 
 This Type based Architecture scales smoothly for small - medium apps. If you guys are building a very large application I would suggest using the following feature based architecture which will be more developer friendly with ease of scaling.
