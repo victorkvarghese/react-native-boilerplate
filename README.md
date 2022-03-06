@@ -1,10 +1,10 @@
-# 🚀 React Native Boilerplate - May 2021
+# 🚀 React Native Boilerplate - March 2021
 
-[![React Native](https://img.shields.io/badge/React%20Native-v0.64.0-green.svg)](https://facebook.github.io/react-native/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.67.3-green.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V5](https://img.shields.io/badge/React%20Navigation-v5.9-blue.svg)](https://reactnavigation.org/)
 
 React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga
-and redux persist. Uses latest version of react-navigation (v5.9)
+and redux persist. Uses latest version of react-navigation (v6.0)
 
 <p float="left">
 <a href='http://redux.js.org'><img src='https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67' height='60' alt='Redux Logo' aria-label='redux.js.org' /></a>
