@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { NavigationContainer, Theme } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {
+  createStackNavigator,
+  StackNavigationOptions,
+} from '@react-navigation/stack';
 import { useSelector } from 'react-redux';
 
 import { navigationRef } from './NavigationService';
@@ -17,7 +20,7 @@ const Stack = createStackNavigator();
 const AuthStack = createStackNavigator();
 const LoggedInStack = createStackNavigator();
 
-const homeOptions = {
+const homeOptions: StackNavigationOptions = {
   title: 'Home',
   headerTitleStyle: {
     fontWeight: 'bold',
@@ -79,7 +82,7 @@ const App: React.FC<IProps> = (props: IProps) => {
     <NavigationContainer ref={navigationRef} theme={theme}>
       <StatusBar barStyle={theme.dark ? 'light-content' : 'dark-content'} />
 
-      <Stack.Navigator headerMode="none">
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         {isLoggedIn ? (
           <Stack.Screen
             name="Home"

@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { NavigationContainerRef } from '@react-navigation/native';
+import { createNavigationContainerRef } from '@react-navigation/native';
 
 // NavigationContainer is referred here - Check NavigationStack
-export const navigationRef = React.createRef<NavigationContainerRef>();
+export const navigationRef = createNavigationContainerRef();
 
 function navigate(name: string, params?: any) {
-  navigationRef.current?.navigate(name, params);
+  navigationRef.current?.navigate({ key: name, params });
 }
 
 function goBack() {
